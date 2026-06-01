@@ -102,7 +102,7 @@ const Register = ({ onNavigate, onRegisterSuccess }) => {
               value={formData.email}
               type="email"
               name="email"
-              maxLength="20"
+              maxLength="50"
               required
               onChange={handleChange}
               required
@@ -115,7 +115,7 @@ const Register = ({ onNavigate, onRegisterSuccess }) => {
               type="password"
               name="password"
               minLength="8"
-              maxLength="20"
+              maxLength="50"
               pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$"
               title="Password must contain at least one uppercase letter, one lowercase latter and one number."
               required

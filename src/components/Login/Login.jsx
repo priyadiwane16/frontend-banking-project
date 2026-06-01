@@ -14,7 +14,10 @@ const Login = ({ onLoginSuccess, onNavigate, registeredUser }) => {
       return;
     }
 
-    if (email === registeredUser.email) {
+    if (
+      email === registeredUser.email &&
+      password === registeredUser.password
+    ) {
       alert("Login Successfully ! ");
       onLoginSuccess(registeredUser);
     } else {
